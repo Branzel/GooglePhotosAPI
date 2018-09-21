@@ -1,0 +1,188 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+@import '../../includes/css/lightgallery';
+@import '../../includes/css/lg-transitions';
+@import '../../includes/css/lg-fb-comment-box';
+
+.lg-icon {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+	
+.lg-toolbar {
+	.lg-close:after {
+		content: "\f00d";
+	}
+
+	.lg-download:after {
+		content: "\f019";
+	}
+}
+
+.lg-outer {
+	.lg-toogle-thumb:after {
+		content:"\f00a";
+	}
+}
+	
+.lg-autoplay-button:after {
+  content: "\f04b"; }
+
+.lg-show-autoplay .lg-autoplay-button:after {
+  content: "\f04c"; }
+
+.lg-fullscreen:after {
+	content:"\f065";
+}
+
+.lg-fullscreen-on .lg-fullscreen:after {
+	content:"\f066";
+}
+
+#lg-zoom-in:after {
+	content:"\f00e";
+}
+#lg-zoom-out:after {
+	content:"\f010";
+}
+#lg-actual-size:after {
+	content:"\f302";
+}
+.lg-outer #lg-share:after {
+	content:"\f1e0";
+}
+
+.lg-outer #lg-share-facebook .lg-icon:after,
+.lg-outer #lg-share-twitter .lg-icon:after,
+.lg-outer #lg-share-googleplus .lg-icon:after,
+.lg-outer #lg-share-pinterest .lg-icon:after {
+	font-family:'Font Awesome 5 Brands';
+	}
+
+.lg-outer #lg-share-facebook .lg-icon {
+  color: #3b5998; }
+
+.lg-outer #lg-share-facebook .lg-icon:after {
+  content: "\f39e"; }
+
+.lg-outer #lg-share-twitter .lg-icon {
+  color: #00aced; }
+
+.lg-outer #lg-share-twitter .lg-icon:after {
+  content: "\f099"; }
+
+.lg-outer #lg-share-googleplus .lg-icon {
+  color: #dd4b39; }
+
+.lg-outer #lg-share-googleplus .lg-icon:after {
+  content: "\f2b3"; }
+
+.lg-outer #lg-share-pinterest .lg-icon {
+  color: #cb2027; }
+
+.lg-outer #lg-share-pinterest .lg-icon:after {
+  content: "\f0d2"; }
+
+  
+.lg-actions {
+	
+	.lg-prev:after {
+		content:"\f104";
+	}
+	
+	.lg-next:before {
+		content:"\f105";
+	}
+}
+
+.page-load-status {
+	padding:1rem 0;
+	
+	.page-load-status-message {
+		text-align:center;
+		color:#777;
+		margin:1rem 0;
+	}
+}
+
+#fotoboekContainer {
+	.listItem {
+		padding-bottom:15px;
+		
+		.card {
+			height:100%;
+			
+			> a {
+				height:100%;
+				// background-color:#777;
+			}
+		}
+	}
+}
+	
+.pagination {
+	margin-top:1em;
+	
+	a.page-link,
+	a.page-link:visited {
+		border:1px solid #dee2e6;
+	}
+}
+
+.grid-item,
+.listItem {
+	padding:5px !important;
+	box-shadow:none;
+	background:none;
+}
+
+.grid-item {
+	float: left;
+	
+	a.image {
+		display:block;
+	}
+	
+	img {
+		max-width:100%;
+		max-height:100%;
+		width:100%;
+		height:auto;
+		
+		// &.img-width {
+			// width:auto;
+			// height:100%;
+		// }
+		
+		&.img-height {
+			height:auto;
+			width:100%;
+		}
+	}
+}
+
+.listItem {
+	.card {
+		img.card-img-top,
+		img.rounded {
+			border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0 !important;
+		}
+		
+		.card-body {
+			text-align:center;
+			height:100%;
+			vertical-align:middle!important;
+		}
+	}
+}
